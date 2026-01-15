@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShopCart | Online Shopping</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">
+    <h1>SHOP<span>CART</span></h1>
+  </div>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="header-btn">
+    <button type="button" class="btn" onclick="openLogin()">Login</button>
+    <button type="button" class="btn btn-primary" onclick="openSignup()">Sign Up</button>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Best Online Shopping Experience</h1>
+    <p>ShopCart brings you the best quality products at affordable prices.</p>
+    <a href="products.html" class="hero-btn">Shop Now</a>
+  </div>
+
+  <div class="hero-image">
+    <img src="images/hero-product.png" alt="Online Shopping">
+  </div>
+</section>
+
+<section class="offer-section">
+  <div class="offer-box">
+    <h2>MEGA SALE 🔥</h2>
+    <p>Flat 50% OFF – Limited Time Only</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p class="copyright">© 2026 ShopCart. All Rights Reserved.</p>
+</footer>
+
+<div class="modal" id="loginModal">
+  <div class="modal-box">
+    <h2>Login to ShopCart</h2>
+
+    <input type="text" placeholder="Email or Phone Number">
+    <input type="password" placeholder="Password">
+
+    <button class="submit-btn">Login</button>
+    <p class="close" onclick="closeLogin()">Close</p>
+  </div>
+</div>
+
+<div class="modal" id="signupModal">
+  <div class="modal-box">
+    <h2>Create Account</h2>
+
+    <input type="text" placeholder="Email or Phone Number">
+    <input type="text" placeholder="Enter OTP">
+    <input type="password" placeholder="Password">
+    <input type="password" placeholder="Confirm Password">
+
+    <button class="submit-btn">Sign Up</button>
+    <p class="close" onclick="closeSignup()">Close</p>
+  </div>
+</div>
+
+<script>
+function openLogin() {
+  document.getElementById("loginModal").style.display = "flex";
+}
+function closeLogin() {
+  document.getElementById("loginModal").style.display = "none";
+}
+function openSignup() {
+  document.getElementById("signupModal").style.display = "flex";
+}
+function closeSignup() {
+  document.getElementById("signupModal").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
