@@ -3,9 +3,6 @@
 ShopCart is a **responsive e-commerce website frontend** built using **HTML & CSS only**.  
 The project focuses on clean UI, modern layout, and mobile responsiveness inspired by platforms like Flipkart and Amazon.
 
-🌐 **Live Website:**  
-https://dep00001.github.io/shopcart/
-
 ---
 
 ## 📌 Features
